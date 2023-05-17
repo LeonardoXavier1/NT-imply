@@ -13,7 +13,7 @@
   <body>
     <header>
       <nav>
-        <a class="logo" href="/">Bem-Vindos Novos Talentos</a>
+        <a class="logo" href="/">Roleta dos Novos Talentos</a>
         <img src="https://imply.com/wp-content/uploads/logo-476x154.png" alt="logo da imply">
         <div class="mobile-menu">
           <div class="line1"></div>
@@ -30,11 +30,19 @@
     </header>
     
     <main>
-      <h2 >Projeto desenvolvido com o intuito de facilitar a organização dos novos Talentos.</h2>
-
-
-
-
+      <h2 >Projeto desenvolvido com o intuito de roletar os nomes dos novos Talentos.</h2>
+      <?php
+  
+      $nomes = array("João", "Ricardo", "Daniela", "Leonardo", "Felipe","Cassia", "Vinicius U.", "Vinicius C.", "Lucas R.", "Lucas C.", "Matheus A.", "Ken", "Gabriel", "Matheus C.");
+      
+      $indice = array_rand($nomes);
+      $nomeSorteado = $nomes[$indice];
+      
+      echo "<h3> O nome sorteado é: <h3>" . $nomeSorteado;
+      
+    ?>
+    <a onclick="atualizarPagina()" class="codepen-button"><span>ㅤ-ㅤRoletar</span></a>
+    
 
 
 
